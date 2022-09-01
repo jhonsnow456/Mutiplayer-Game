@@ -1,0 +1,100 @@
+Interface
+---------------
+An interance is a collection of:
+ * abstract methods
+ * default methods
+ * static methods
+ * final data members
+ * nested classes or interfaces
+
+An interface forms a custom secondary
+reference type, in Java.
+
+Being a reference type, it cannot 
+be instantiated.
+
+* abstract methods
+---------------------
+An abstract method is a method
+with signature only and no body.
+
+It must be overridden by the 
+implementing class, otherwise
+it would make the implementing
+class: abstract.
+
+Interface methods are by default
+abstract.
+
+* default methods
+--------------------
+default methods are interface 
+methods that have body (definition)
+associated.
+
+default methods may be overridden
+by the implementing class.
+
+default methods of an interface
+must have the "default" keyword
+perfixed to avoid the method being
+taken as "abstract".
+
+* static methods
+--------------------
+static methods are interface 
+methods that have body (definition)
+associated.
+
+static methods cannot be overridden 
+by the implementing class.
+
+static methods of an interface
+must have the "static" keyword
+perfixed to avoid the method being
+taken as "abstract".
+
+* final data members
+-------------------------
+Data members of an interface are
+final by default and must be 
+initialized while declaration.
+
+* nested classes or interfaces
+---------------------------------
+See in a separate example/text.
+
+
+Access Specifiers
+--------------------
+All members of an interface are
+"public" by default.
+
+"private" and "protected" members
+are not allowed in an interface.
+
+Inheritance
+---------------
+An interface can extend one to many
+unique interfaces.
+An interface cannot extend any class.
+Nor can a class extend any interface.
+
+
+Usage
+========
+An interface, being a reference type, 
+cannot be instantiated for use.
+
+It is to be implemented by some class(es).
+
+By this type compatibilty is established
+and then the interface is used for lose coupling.
+
+Loose coupling allows a super reference, 
+of an interface or a super class, to refer 
+to objects of implementing class or sub 
+class.
+Next, run time polymorphism to be achieved.
+
+
